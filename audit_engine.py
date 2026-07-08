@@ -135,6 +135,7 @@ def audit_policy(policy_text):
         "compliant_status": compliant_status,
         "risk_score": risk_score,
         "risk_level": risk_level,
+        "summary":f"The audit found  {len(gaps_found)} compliance gaps. Overall compliance status is{compliant_status}with a {risk_level}risk level.",
         "frameworks": frameworks,
         "gaps_found": gaps_found,
         "remediation_steps": remediation_steps

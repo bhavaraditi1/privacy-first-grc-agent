@@ -52,22 +52,27 @@ if uploaded_file is not None:
         with st.spinner("Running GRC Audit..."):
 
             audit_result = audit_policy(policy_text)
-            with open("reports/audit_report.json", "r", encoding="utf-8") as f:
-              audit_result = json.load(f)
 
-            with open("reports/audit_report.json", "w", encoding="utf-8") as f:
-                json.dump(audit_result, f, indent=4)
+        import os
+        
+        os.makedirs("reports", exist_ok=True)
+        
+        with open("reports/audit_report.json", "w", encoding="utf-8") as f:
+            json.dump(audit_result, f, indent=4)
+            
+        import sys
 
-            subprocess.run(
-                ["python", "report_generator.py"],
-                check=True
-            )
-            st.success("✅ Audit Completed Successfully!")
-            st.caption(
-    f"🕒 Audit Generated: {datetime.now().strftime('%d %B %Y, %I:%M %p')}"
-)
-            st.subheader("📝 Executive Summary")
-            import json
+        subprocess.run(
+           [sys.executable, "report_generator.py"],
+           check=True
+        )            
+        
+        st.success("✅ Audit Completed Successfully!")
+        st.caption(
+             f"🕒 Audit Generated: {datetime.now().strftime('%d %B %Y, %I:%M %p')}"
+        )
+        st.subheader("📝 Executive Summary")
+        import json
 
         with open("reports/audit_report.json", "r", encoding="utf-8") as f:
            report = json.load(f)

@@ -1,0 +1,42 @@
+{
+    "compliant_status": "Non-Compliant",
+    "risk_score": 100,
+    "risk_level": "High",
+    "summary": "The audit found  13 compliance gaps. Overall compliance status isNon-Compliantwith a Highrisk level.",
+    "frameworks": [
+        "ISO 27001",
+        "NIS2",
+        "NIST CSF",
+        "GDPR"
+    ],
+    "gaps_found": [
+        "Incident Response is missing.",
+        "Patch Management is missing.",
+        "Vulnerability Management is missing.",
+        "Asset Inventory is missing.",
+        "Cloud Security is missing.",
+        "Data Classification is missing.",
+        "Data Retention is missing.",
+        "Business Continuity is missing.",
+        "Disaster Recovery is missing.",
+        "Vendor Risk is missing.",
+        "Threat Intelligence is missing.",
+        "Security Awareness is missing.",
+        "Network Security is missing."
+    ],
+    "remediation_steps": [
+        "Implement Incident Response.",
+        "Implement Patch Management.",
+        "Implement Vulnerability Management.",
+        "Implement Asset Inventory.",
+        "Implement Cloud Security.",
+        "Implement Data Classification.",
+        "Implement Data Retention.",
+        "Implement Business Continuity.",
+        "Implement Disaster Recovery.",
+        "Implement Vendor Risk.",
+        "Implement Threat Intelligence.",
+        "Implement Security Awareness.",
+        "Implement Network Security."
+    ]
+}
