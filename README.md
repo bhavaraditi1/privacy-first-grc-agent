@@ -62,7 +62,25 @@ ollama serve
 
 streamlit run streamlit_app.py
 
-## Author
+---
 
-Aditi Bhavar
-BSc Cyber Security
+## 👩‍💻 Author
+
+**Aditi Bhavar**
+
+BSc Cybersecurity Student | GRC & Cloud Compliance Enthusiast
+
+### Connect with me
+
+- GitHub: https://github.com/bhavaraditi1
+
+---
+
+## 🚀 Future Improvements
+
+- Support for ISO 27001, NIST CSF, CIS Controls and SOC 2
+- AI-powered remediation recommendations
+- Vendor Risk Assessment module
+- Cloud deployment
+- Multi-document compliance comparison
+- Dashboard analytics
